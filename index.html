@@ -7,7 +7,24 @@
     <title>TO DO List</title>
 </head>
 <body>
-    
+    <div class="todo-container">
+        <h1>TO-DO-LIST</h1>
+
+        <form class="inputText">
+            <input type="text" id="newTask" placeholder="new task" >
+            <button id="add-tesk">ADD</button>
+        </form>
+
+        <ul id="todo-list">
+            <li>
+                <span class="delete">❌</span>
+                <input type="checkbox" class="tesk-check">
+                <span class="tesk">Vanilla JavaScript</span>
+            </li>
+        </ul>
+
+        <button id="clear-tesk">Clear</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
