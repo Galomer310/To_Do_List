@@ -25,14 +25,13 @@ body {
     background-color: white;
     width: 350px;
     padding: 30px;
-    
+
 }
 
 h1 {
     color: white;
     font-size: 24px;
     border-radius: 5px;
-
 }
 
 .input-container {
@@ -47,13 +46,36 @@ input[type="text"] {
     font-size: 20px;
 }
 
-button {
-    padding: 10px;
+#addBtn {
+    padding: 0px;
     border: none;
     color: #4d90fe;
-    font-size: 15px;
+    background-color: white;
+    font-size: 25px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.tesk-container {
+    position: relative;
+}
+
+#todo-list {
+    margin: 20px;
+}
+
+#clear-tesk {
+    position: absolute;
+    bottom: 5px;
+    right: 40px;    
+    padding: 10px;
+    border: none;
+    color: #fd0000;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+
 }
 
 button:hover {
