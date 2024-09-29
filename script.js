@@ -36,8 +36,8 @@ addingBtn.addEventListener("click", function(event) {
     taskSpan.textContent = taskText;
 
     newTeskList.appendChild(deleteBtn);
-    newTeskList.appendChild(checkbox);
     newTeskList.appendChild(taskSpan);
+    newTeskList.appendChild(checkbox);
     toDoList.appendChild(newTeskList);
     
     newTaskInput.value = '';

@@ -9,22 +9,13 @@ body {
     background: linear-gradient(90deg, rgb(190, 15, 15) 0%, rgb(218, 55, 131) 100%);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 100vh;
 }
+/* ///////////////////////////////////////////////// */
 
-.todo-container {
-    background-color: white;
-    margin: 25px;
-    width: 350px;
-    text-align: center;
-}
-
-.tesk-container {
-    background-color: white;
-    width: 350px;
-    padding: 30px;
+.header-container {
+    margin-top: 10em;
 }
 
 h1 {
@@ -32,20 +23,17 @@ h1 {
     font-size: 24px;
     border-radius: 5px;
 }
+/* ///////////////////////////////////////////////// */
+.todo-container {
+    background-color: white;
+    margin: 25px;
+    width: 350px;
+    text-align: center;
+}
 
 .input-container {
     margin: 15px;
     position: relative;
-
-}
-
-input[type="text"] {
-    display: flex;
-    padding: 10px;
-    width: 250px;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
 }
 
 #addBtn {
@@ -59,15 +47,30 @@ input[type="text"] {
     position: absolute;
     right: 5px;
     bottom: 15%;
-
 }
-
+/* ///////////////////////////////////////////////// */
 .tesk-container {
-    position: relative;
+    background-color: white;
+    width: 350px;
+    padding: 30px;
 }
 
 #todo-list {
     margin: 20px;
+}
+
+input[type="text"] {
+    display: flex;
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+/* ///////////////////////////////////////////////// */
+
+.tesk-container {
+    position: relative;
 }
 
 #clear-tesk {
@@ -81,12 +84,6 @@ input[type="text"] {
     font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
-
-}
-
-button:hover {
-    background-color: #4d90fe;
-    color: white;
 }
 
 ul {
@@ -101,16 +98,6 @@ li {
     padding: 10px;
     border-bottom: 1px solid rgb(14, 92, 250);
 }
-
-.delete {
-    color: red;
-    cursor: pointer;
-}
-
-.task {
-    flex: 1;
-    margin-left: 10px;
-  }
   
   .task.completed {
     text-decoration: line-through;
