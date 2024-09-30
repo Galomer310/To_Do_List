@@ -53,6 +53,7 @@ h1 {
     background-color: white;
     width: 400px;
     padding: 30px;
+    
 }
 
 #todo-list {
@@ -81,7 +82,7 @@ input[type="text"] {
     border: none;
     color: #fd0000;
     background-color: white;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 5px;
     cursor: pointer;
 }
