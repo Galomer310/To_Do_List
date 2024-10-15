@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(90deg, rgb(190, 15, 15) 0%, rgb(218, 55, 131) 100%);
+    background: linear-gradient(90deg, rgba(190, 15, 15, 0.577) 0%, rgba(55, 82, 218, 0.583) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,13 +15,14 @@ body {
 /* ///////////////////////////////////////////////// */
 
 .header-container {
-    margin-top: 10em;
+    margin-top: 5em;
 }
 
 h1 {
     color: white;
     font-size: 40px;
     border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
 }
 /* ///////////////////////////////////////////////// */
 .todo-container {
@@ -29,6 +30,7 @@ h1 {
     margin: 25px;
     width: 400px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .input-container {
@@ -53,6 +55,7 @@ h1 {
     background-color: white;
     width: 400px;
     padding: 30px;
+    border-radius: 10px;
     
 }
 
@@ -101,16 +104,37 @@ li {
     font-size: 25px;
 }
   
-  .task.completed {
+.task.completed {
     text-decoration: line-through;
-    color: red;
-  }
+color: red;
+}
   
-  #clear-tasks {
+#clear-tasks {
     margin-top: 20px;
     color: red;
     background: none;
     border: none;
     cursor: pointer;
+}
+/* ///////////////////////////////////////////////// */
+
+.explanationList {
     
-  }
+    border-radius: 20px;
+    color: #0b3a6e; 
+    background-color: #f8f9fa; 
+    border: 1px solid #ccc; 
+    margin: 20px 0; 
+    padding: 15px; 
+    font-weight: 700;
+}
+
+.explanationList li {
+    margin-bottom: 10px; 
+}
+
+.explanationList li:hover {
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.577) 0%, rgba(0, 42, 255, 0.583) 100%);
+    color: white;
+    border-radius: 5px;
+}
